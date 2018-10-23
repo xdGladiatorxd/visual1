@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+</head>
+<body>
+    <header>
+        <h1>Nocilla</h1>
+    </header>
+    <section>
+        <h2>Ejercicio</h2>
+        <article>
+            <!--
+                <table>
+                <tr>
+                <td><label for="textfield"></label><input type="text" name="textfield" id="id_mensaje"></td>
+                <td><label for="textfield"></label><input type="text" name="textfield" id="id_comentario"></td>
+                </tr>
+                </table>
+                <script>
+                var mensaje1=document.getElementById("id_mensaje");
+                mensaje1.value=prompt("Pon algo");
+                var mensaje2=document.getElementById("id_comentario");
+                mensaje2.value=prompt("Pon algo");
+                </script>
+            -->
+            <table>
+                    <tr>
+                    <td><label for="textfield"></label><input type="text" name="textfield" id="id_mensaje"></td>
+                    <td><label for="textfield"></label><input type="text" name="textfield" id="id_comentario"></td>
+                    </tr>
+                    </table>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+</body>
+<script>
+        var cont=0;
+        var nrandom=Math.round(Math.random()*99+1);
+        var nencuentro=0;
+        var mensaje1=document.getElementById("id_mensaje");
+        var mensaje2=document.getElementById("id_comentario");
+        while(nrandom!=nencuentro && cont!=10){
+        nencuentro=prompt("Escribe un numero");
+        mensaje1.value=nencuentro;
+        cont++;
+        if(cont==10 && nencuentro==nrandom){
+            mensaje1.value=(nencuentro+ ", has ganado");
+            mensaje2.value=("Intento:"+ (cont));
+        }
+        else if(cont==10){
+            mensaje1.value=(nencuentro+ ", has perdido");
+            mensaje2.value=("Intento:"+ (cont));
+        }
+        else if(nencuentro>nrandom){
+            mensaje1.value=(nencuentro+ ", es mas bajo");
+            mensaje2.value=("Intento:"+ (cont));
+        }
+        else if(nencuentro<nrandom){
+            mensaje1.value=(nencuentro+ ", es mas alto");
+            mensaje2.value=("Intento:"+ (cont));
+        }
+        else if(nencuentro==nrandom){
+            mensaje1.value=(nencuentro+ ", has fallado");
+            mensaje2.value=("Intento:"+ (cont));
+        }
+    }
+    </script>
+</html>

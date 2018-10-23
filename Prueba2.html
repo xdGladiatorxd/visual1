@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>DAW</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+</head>
+<body>
+    <header>
+        <h1>Nocilla</h1>
+    </header>
+    <section>
+        <h2>Ejercicio</h2>
+        <article>
+            <!--<script>
+                var meses=["Enero","febrero","marzo","abril","mayo","junio","agosto","septiembre","octubre","noviembre"];
+                document.write("Numero de meses: meses.length :" + meses.length);
+                document.write("Mete un mes al final: meses.push(Diciembre) :" + meses.push("Diciembre"));
+                document.write("Mete un mes al principio: meses.unshift(Enero) :" + meses.unshift("Enero"));
+                document.write("Borra el ultimo mes: meses.pop :" + meses.pop());
+                document.write("Borra el primer mes: meses.shift :" + meses.shift());
+                var meses= new Array("dato");
+            </script>-->
+            <script>
+                var meses=["enero","febrero","marzo","abril","mayo","junio","agosto","septiembre","octubre","noviembre"]
+                var mes=prompt("Pon un mes");
+                meses.push(mes);
+                var contador=0;
+                while(contador<meses.length){
+                    document.write(meses[contador]+"<br>");
+                    contador++;
+                }
+            </script>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+</body>
+</html>

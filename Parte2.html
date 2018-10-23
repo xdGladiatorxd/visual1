@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcos</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+    <link rel="icon" type="image/png" href="Imagenes/icono.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Desarrollo web en entorno cliente</h1>
+    </header>
+    <section>
+        <h2><a href="index.html"><img src="Imagenes/inicio.png" width="20" height="20"></a>Numeros aleatorios 2</h2>
+        <article>
+            <script>
+                var nrandom=Math.round(Math.random()*9+1);
+                var nencuentro=0;
+                while(nrandom!=nencuentro){
+                nencuentro=prompt("Escribe un numero");
+                if(nencuentro>nrandom){
+                    document.write("El numero que has introducido es " +nencuentro+ ", el numero que buscas es mas bajo<br>");
+                }
+                else if(nencuentro<nrandom){
+                    document.write("El numero que has introducido es " +nencuentro+ ", el numero que buscas es mas alto<br>");
+                }
+                else if(nencuentro==nrandom){
+                    document.write("Has encontrado el numero, era el " +nrandom);
+                }
+                };
+            </script>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+</body>
+</html>

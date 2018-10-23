@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcos</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+    <link rel="icon" type="image/png" href="Imagenes/icono.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Desarrollo web en entorno cliente</h1>
+    </header>
+    <section>
+        <h2><a href="index.html"><img src="Imagenes/inicio.png" width="20" height="20"></a>Usuario - Switch / Case</h2>
+        <article>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+    <script>
+    var nombre=prompt("Introduce tu nombre por favor").toLowerCase();
+    var cambio=document.getElementsByTagName("article")[0];
+    switch(nombre){
+        case "marcos":{
+            cambio.style.background="blue";
+            cambio.textContent="Buenos dias "+nombre;
+            break;
+        }
+        case "francisco":{
+            cambio.style.background="red";
+            cambio.textContent="Buenos dias "+nombre;
+            break;
+        }
+        case "sergio":{
+            cambio.style.background="green";
+            cambio.textContent="Buenos dias "+nombre;
+            break;
+        }
+        case "pepe":{
+            cambio.style.background="yellow";
+            cambio.textContent="Buenos dias "+nombre;
+            break;
+        }
+        case "angel":{
+            cambio.style.background="violet";
+            cambio.textContent="Buenos dias "+nombre;
+            break;
+        }
+    }
+    </script>
+</body>
+</html>

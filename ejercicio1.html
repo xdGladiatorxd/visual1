@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcos</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+    <link rel="icon" type="image/png" href="Imagenes/icono.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Desarrollo web en entorno cliente</h1>
+    </header>
+    <section>
+        <h2><a href="index.html"><img src="Imagenes/inicio.png" width="20" height="20"></a>Usuario - Switch / Case</h2>
+        <article>
+                <table>
+                        <tr>
+                            <th>Productos</th>
+                            <th>Precio</th>
+                        </tr>
+                            <tr>
+                                <td>Coca Cola</td>
+                                <td>1.25€</td>
+                            </tr>
+                            <tr>
+                                <td>Fanta Limon</td>
+                                <td>1.00€</td>
+                            </tr>
+                            <tr>
+                                <td>Fanta Naranja</td>
+                                <td>2.00€</td>
+                            </tr>
+                            <tr>
+                                <td>Nestea</td>
+                                <td>1.50€</td>
+                            </tr>
+                            <tr>
+                                <td>Pepsi</td>
+                                <td>0.75€</td>
+                            </tr>
+                            <script>
+                                var saldo=parseFloat(prompt("Introduce el saldo"));
+                                var producto=prompt("Intoduce el nombre del producto que quiere").toLowerCase();
+                            </script>
+                                <table>
+                                    <tr>
+                                        <td>
+                                            Saldo
+                                        </td>
+                                        <td>
+                                            Producto
+                                        </td>
+                                        <td>
+                                            Cambio
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <script>
+                                                document.write(saldo); 
+                                            </script>
+                                        </td>
+                                        <td>
+                                            <script>
+                                                if(producto=="coca cola"){
+                                                    document.write("Coca Cola");
+                                                }
+                                                else if(producto=="fanta limon"){
+                                                    document.write("Fanta Limon");
+                                                }
+                                                else if(producto=="fanta naranja"){
+                                                    document.write("Fanta Naranja");
+                                                }
+                                                else if(producto=="nestea"){
+                                                    document.write("Nestea");
+                                                }
+                                                else if(producto=="pepsi"){
+                                                    document.write("Pepsi");
+                                                }
+                                            </script>
+                                        </td>
+                                        <br>
+                                        <td>
+                                            <script>
+                                                if(producto=="coca cola"){
+                                                    if((saldo-1.25)>=0){
+                                                        document.write(saldo-1.25 + "€");
+                                                    }
+                                                    else{
+                                                        document.write("No hay suficiente saldo, te faltarian " + ((saldo-1.25)*-1) + "€");
+                                                    }
+                                                }
+                                                else if(producto=="fanta limon"){
+                                                    if((saldo-1)>=0){
+                                                        document.write(saldo-1 + "€");
+                                                    }
+                                                    else{
+                                                        document.write("No hay suficiente saldo, te faltarian " + ((saldo-1)*-1) + "€");
+                                                    }
+                                                }
+                                                else if(producto=="fanta naranja"){
+                                                    if((saldo-2)>=0){
+                                                        document.write(saldo-2 + "€");
+                                                    }
+                                                    else{
+                                                        document.write("No hay suficiente saldo, te faltarian " + ((saldo-2)*-1) + "€");
+                                                    }
+                                                }
+                                                else if(producto=="nestea"){
+                                                    if((saldo-1.50)>=0){
+                                                        document.write(saldo-1.50 + "€");
+                                                    }
+                                                    else{
+                                                        document.write("No hay suficiente saldo, te faltarian " + ((saldo-1.50)*-1) + "€");
+                                                    }
+                                                }
+                                                else if(producto=="pepsi"){
+                                                    if((saldo-0.75)>=0){
+                                                        document.write(saldo-0.75 + "€");
+                                                    }
+                                                    else{
+                                                        document.write("No hay suficiente saldo, te faltarian " + ((saldo-0.75)*-1) + "€");
+                                                    }
+                                                }
+                                            </script>
+                                        </td>
+                                    </tr>
+                                </table>
+                            
+                        </table>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+</body>
+</html>

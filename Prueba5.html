@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcos</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+    <link rel="stylesheet" href="css/calculadora.css" />
+    <link rel="icon" type="image/png" href="Imagenes/icono.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Desarrollo web en entorno cliente</h1>
+    </header>
+    <section>
+        <h2><a href="index.html"><img src="Imagenes/inicio.png" width="20" height="20"></a>Calculadora</h2>
+        <article>
+            <!--
+                <table>
+                <tr>
+                <td><label for="textfield"></label><input type="text" name="textfield" id="id_mensaje"></td>
+                <td><label for="textfield"></label><input type="text" name="textfield" id="id_comentario"></td>
+                </tr>
+                </table>
+                <script>
+                var mensaje1=document.getElementById("id_mensaje");
+                mensaje1.value=prompt("Pon algo");
+                var mensaje2=document.getElementById("id_comentario");
+                mensaje2.value=prompt("Pon algo");
+                </script>
+            -->
+            <table class="calculadora">
+                    <tr>
+                        <td colspan="4"><input type="text" readonly=”readonly” name="textfield" class="boton-texto" id="display"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="C" class="boton-operando" id="boton_r"/></td>
+                        <td colspan="2"><input type="button" value="&#60;x" class="boton-quitar" id="boton_r1"/></td>
+                        <td><input type="button" value=":" class="boton-operando" id="boton_:"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="7" class="boton" id="boton_7"/></td>
+                        <td><input type="button" value="8" class="boton" id="boton_8"/></td>
+                        <td><input type="button" value="9" class="boton" id="boton_9"/></td>
+                        <td><input type="button" value="x" class="boton-operando"  id="boton_x"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="4" class="boton" id="boton_4"/></td>
+                        <td><input type="button" value="5" class="boton" id="boton_5"/></td>
+                        <td><input type="button" value="6" class="boton" id="boton_6"/></td>
+                        <td><input type="button" value="-" class="boton-operando" id="boton_-"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="1" class="boton" id="boton_1"/></td>
+                        <td><input type="button" value="2" class="boton" id="boton_2"/></td>
+                        <td><input type="button" value="3" class="boton" id="boton_3"/></td>
+                        <td><input type="button" value="+" class="boton-operando" id="boton_+"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" value="." class="boton-operando" id="boton_."/></td>
+                        <td><input type="button" value="0" class="boton" id="boton_0"/></td>
+                        <td colspan="2"><input type="button" value="=" class="boton-igual" id="boton_="/></td>
+                    </tr>
+                    </table>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</body>
+</html>

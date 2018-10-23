@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8"/>
+    <title>Marcos</title>
+    <link rel="stylesheet" href="css/plantilla2.css" />
+    <link rel="icon" type="image/png" href="Imagenes/icono.jpg" />
+</head>
+<body>
+    <header>
+        <h1>Desarrollo web en entorno cliente</h1>
+    </header>
+    <section>
+        <h2><a href="index.html"><img src="Imagenes/inicio.png" width="20" height="20"></a>Numeros aleatorios 4</h2>
+        <article>
+            <script>
+                var intentos=["primera","segunda","tercer","cuarta","quinta","sexta","septima","octava","novena","decima"]
+                var intentos2=["primer","segundo","tercer","cuarto","quinto","sexto","septimo","octavo","noveno","decimo"]
+                var cont=0;
+                var nrandom=Math.round(Math.random()*9+1);
+                var nencuentro=0;
+                while(nrandom!=nencuentro && cont!=10){
+                nencuentro=prompt("Escribe un numero");
+                cont++;
+                if(cont==10){
+                    document.write("Has fallado");
+                }
+                else if(nencuentro>nrandom){
+                    document.write(intentos2[cont-1]+" intento:" +nencuentro+ ", el numero que buscas es mas bajo<br>");
+                }
+                else if(nencuentro<nrandom){
+                    document.write(intentos2[cont-1]+" intento:" +nencuentro+ ", el numero que buscas es mas alto<br>");
+                }
+                else if(nencuentro==nrandom){
+                    document.write("Lo has logrado al "+intentos2[cont-1]+" intento. El numero era el "+nrandom);
+                }
+                }
+            </script>
+        </article>
+    </section>
+    <aside>
+        <h2>Publicidad</h2>
+        <a href="https://streamelements.com/xdgladiatorxd/tip"><img src="Imagenes/pg_donate.png" width="80%"></a>
+    </aside>
+    <footer>
+        <p>Creador: Marcos Botella Torres</p>
+    </footer>
+</body>
+</html>
